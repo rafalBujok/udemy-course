@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New Recipe</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12 w-100">
+        <a href="#" class="d-block recipeItem my-2 p-2" *ngFor="let recipe of recipes">
+            <img class="img-fluid float-right" style=" height: 70px;" [src]="recipe.imagePath">
+            <h5>{{recipe.name}}</h5>
+            <p>{{recipe.description}}</p>
+
+        </a>
+
+
+
+
+        <app-recipe-item></app-recipe-item>
+    </div>
+</div>
